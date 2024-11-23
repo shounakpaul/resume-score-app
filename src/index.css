@@ -21,3 +21,7 @@
   width: 2.65rem;
   height: 2.65rem;
 }
+
+body {
+  @apply bg-light dark:bg-dark;
+}

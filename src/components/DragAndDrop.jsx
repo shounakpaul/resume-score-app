@@ -2,7 +2,7 @@ import React, { useCallback, useState } from "react";
 import { useDropzone } from "react-dropzone";
 import AlertModal from "./AlertModal";
 
-function DragAndDrop() {
+function DragAndDrop({ className }) {
   const [modalMessage, setModalMessage] = useState("");
   const [showModal, setShowModal] = useState(false);
 
@@ -39,10 +39,11 @@ function DragAndDrop() {
     onDrop,
     accept: { "application/pdf": [] },
     maxSize: 5242880, // 5MB in bytes
+    multiple: false,
   });
 
   return (
-    <div>
+    <div className={className}>
       <div
         {...getRootProps()}
         className="border-2 border-dashed rounded-3xl p-20 text-center cursor-pointer"

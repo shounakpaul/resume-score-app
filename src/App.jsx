@@ -1,14 +1,13 @@
 import React from "react";
 import DragAndDrop from "./components/DragAndDrop";
 import Navbar from "./components/Navbar";
+import { Outlet } from "react-router";
 
 function App() {
   return (
     <>
       <Navbar />
-      <div className="p-20">
-        <DragAndDrop text="Drag me!" />
-      </div>
+      <Outlet />
     </>
   );
 }
