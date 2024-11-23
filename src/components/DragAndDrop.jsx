@@ -22,7 +22,11 @@ function DragAndDrop() {
       setModalMessage(message);
       setShowModal(true);
     } else {
-      console.log("Accepted files:", acceptedFiles);
+      const message = `Accepted files: ${acceptedFiles
+        .map((file) => file.name)
+        .join(", ")}`;
+      setModalMessage(message);
+      setShowModal(true);
     }
   }, []);
 
@@ -33,7 +37,7 @@ function DragAndDrop() {
 
   const { getRootProps, getInputProps, isDragActive } = useDropzone({
     onDrop,
-    accept: { document: [".pdf"] },
+    accept: { "application/pdf": [] },
     maxSize: 5242880, // 5MB in bytes
   });
 
@@ -48,8 +52,8 @@ function DragAndDrop() {
           <p>Drop the files here ...</p>
         ) : (
           <p>
-            Drag 'n' drop some PDF files here, or click to select files (Max
-            size: 5MB)
+            Drag 'n' drop your resume here, or click to select files (Max size:
+            5MB)
           </p>
         )}
       </div>

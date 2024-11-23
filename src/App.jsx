@@ -1,11 +1,14 @@
 import React from "react";
 import DragAndDrop from "./components/DragAndDrop";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <>
-      <h1 className="text-3xl font-bold underline">Start</h1>
-      <DragAndDrop text="Drag me!" />
+      <Navbar />
+      <div className="p-20">
+        <DragAndDrop text="Drag me!" />
+      </div>
     </>
   );
 }
