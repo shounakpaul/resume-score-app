@@ -1,6 +1,7 @@
 import React from "react";
+import { motion } from "framer-motion";
 
-function Button({ color, children, className, onClick }) {
+function Button({ color, children, className, onClick, disabled }) {
   if (color === "peach") {
     color = "bg-peach text-white hover:bg-peach/80";
   } else if (color === "white") {
@@ -8,13 +9,15 @@ function Button({ color, children, className, onClick }) {
   }
 
   return (
-    <button
-      className={`${color} text-white px-4 py-2 rounded-3xl ${className}`}
+    <motion.button
+      whileHover={{ opacity: 0.8 }}
+      whileTap={{ scale: 0.95 }}
+      className={`${color} text-white px-4 py-2 rounded-3xl font-semibold ${className}`}
       onClick={onClick}
-      color="peach"
+      disabled={disabled}
     >
       {children}
-    </button>
+    </motion.button>
   );
 }
 

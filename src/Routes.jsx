@@ -6,10 +6,10 @@ import {
 } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 import Dashboard from "./pages/Dashboard";
-import History from "./pages/History";
 import Checker from "./pages/Checker";
 import Compare from "./pages/Compare";
 import App from "./App";
+import ProtectedRoute from "./ProtectedRoute";
 
 const AnimatedRoutes = () => {
   const location = useLocation();
@@ -31,42 +31,33 @@ const AnimatedRoutes = () => {
             }
           />
           <Route
-            path="/history"
-            element={
-              <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-                transition={{ duration: 0.5 }}
-              >
-                <History />
-              </motion.div>
-            }
-          />
-          <Route
-            path="/Compare"
-            element={
-              <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-                transition={{ duration: 0.5 }}
-              >
-                <Compare />
-              </motion.div>
-            }
-          />
-          <Route
             path="/checker"
             element={
-              <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-                transition={{ duration: 0.5 }}
-              >
-                <Checker />
-              </motion.div>
+              <ProtectedRoute>
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 0.5 }}
+                >
+                  <Checker />
+                </motion.div>
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/compare"
+            element={
+              <ProtectedRoute>
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 0.5 }}
+                >
+                  <Compare />
+                </motion.div>
+              </ProtectedRoute>
             }
           />
         </Route>

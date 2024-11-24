@@ -19,7 +19,7 @@ function DarkMode({ className }) {
   return (
     <motion.div
       className={
-        "flex items-center justify-center p-3 border-2 rounded-full cursor-pointer bg-light dark:bg-dark  dark:border-light/20 " +
+        "flex items-center justify-center md:p-3 p-2 border-2 rounded-full cursor-pointer bg-light dark:bg-dark  dark:border-light/20 " +
         className
       }
       whileHover={{ scale: 1.1 }}

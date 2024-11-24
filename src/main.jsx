@@ -17,6 +17,7 @@ if (localStorage.theme === "dark") {
 }
 
 const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY;
+console.log(import.meta.env.VITE_SERVER_URL);
 
 if (!PUBLISHABLE_KEY) {
   throw new Error("Missing Publishable Key");

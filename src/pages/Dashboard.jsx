@@ -7,18 +7,18 @@ import { Link } from "react-router-dom";
 
 function Dashboard() {
   return (
-    <div className="flex flex-col items-center justify-center text-center gap-y-5 py-20 dark:bg-dark dark:text-light">
+    <div className="flex flex-col items-center justify-center text-center md:gap-y-10 gap-y-6 py-20 px-5 dark:bg-dark dark:text-light">
       <Lottie
         animationData={DashboardAnimation}
         loop={true}
         className="h-64 w-64"
       />
       <h1 className="text-4xl font-extrabold">
-        Unlock Your Dream Job with a Winning Resume!
+        Unlock Your Dream Job with a Winning Resume
       </h1>
       <h5 className="text-2xl font-light">
-        Analyze, Optimize, and Ace Your Resume—Score It Against Your Next Big
-        Opportunity!
+        Analyze, Optimize, and Ace Your Resume and Score It Against Your Next
+        Big Opportunity
       </h5>
 
       <SignedOut>
@@ -28,7 +28,7 @@ function Dashboard() {
         />
       </SignedOut>
       <SignedIn>
-        <div className="flex flex-row gap-x-5 pt-10">
+        <div className="flex flex-row gap-x-5 pt-16">
           <Link to="/checker">
             <Button color="peach">Check your Resume</Button>
           </Link>
