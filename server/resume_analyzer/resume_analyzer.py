@@ -48,7 +48,6 @@ class ResumeAnalyzer:
             relevance_score, skills_match_score, structure_score, personalization_score, readability_score, impact_score, overall_score = curr
             data = {
                 "relevance_score": float(relevance_score) * 100,
-                "skills_match_score": float(skills_match_score) * 100,
                 "structure_score": float(structure_score) * 100,
                 "personalization_score": float(personalization_score) * 100,
                 "readability_score": float(readability_score) * 100,

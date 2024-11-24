@@ -27,4 +27,5 @@ dist-ssr
 server/.env
 .venv/
 __pycache__/
+uploads/
 
