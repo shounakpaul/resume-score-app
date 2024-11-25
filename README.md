@@ -1,6 +1,6 @@
 # Resume Score App
 
-This project aims to help job seekers improve their resumes by providing detailed analysis and comparison of their resumes with the job description. The project is built using React, Tailwind CSS, and Clerk.dev for authentication.
+This project aims to help job seekers improve their resumes by providing detailed analysis and comparison of their resumes with the job description. The project is built using React, Tailwind CSS, and Clerk.dev for authentication on the frontend and Python, Langchain, Unstructured and Groq on the Backend.
 
 ## Screenshots
 
