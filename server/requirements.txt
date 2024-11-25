@@ -196,3 +196,4 @@ wrapt==1.17.0
 xlrd==2.0.1
 XlsxWriter==3.2.0
 yarl==1.18.0
+gunicorn==23.0.0
