@@ -2,6 +2,13 @@
 
 This project aims to help job seekers improve their resumes by providing detailed analysis and comparison of their resumes with the job description. The project is built using React, Tailwind CSS, and Clerk.dev for authentication.
 
+## Screenshots
+
+![Screenshot 1](./public/Screenshot1.png)
+![Screenshot 2](./public/Screenshot2.png)
+![Screenshot 3](./public/Screenshot3.png)
+![Screenshot 4](./public/Screenshot4.png)
+
 ## Features
 
 - Upload and analyze resumes
