@@ -8,6 +8,7 @@ This project aims to help job seekers improve their resumes by providing detaile
 ![Screenshot 2](./public/Screenshot2.png)
 ![Screenshot 3](./public/Screenshot3.png)
 ![Screenshot 4](./public/Screenshot4.png)
+![Screenshot 5](./public/Screenshot5.png)
 
 ## Features
 
